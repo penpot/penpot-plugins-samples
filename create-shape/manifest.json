@@ -1,0 +1,11 @@
+{
+    "name": "Penpot create shape",
+    "host": "http://localhost:4400",
+    "code": "plugin.js",
+    "description": "This is a create shape plugin",
+    "permissions": [
+      "content:read",
+      "content:write"
+    ]
+  }
+  
