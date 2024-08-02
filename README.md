@@ -1,4 +1,4 @@
-# penpot plugins samples
+# penpot-plugins-samples
 
 In this repository, you'll find a few practical examples and use cases. These examples can help you get started with your first plugin.
 
