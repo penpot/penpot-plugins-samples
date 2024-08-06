@@ -1,0 +1,11 @@
+{
+    "name": "Penpot create text",
+    "host": "http://localhost:4400",
+    "code": "plugin.js",
+    "description": "This is a create text plugin ",
+    "permissions": [
+      "content:read",
+      "content:write"
+    ]
+  }
+  
