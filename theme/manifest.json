@@ -1,0 +1,11 @@
+{
+    "name": "Penpot theme",
+    "host": "http://localhost:4400",
+    "code": "plugin.js",
+    "description": "This is how it works the theme in our plugin",
+    "permissions": [
+      "content:read",
+      "content:write"
+    ]
+  }
+  

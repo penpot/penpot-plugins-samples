@@ -66,6 +66,9 @@ penpot.ui.onMessage<string>((message) => {
     // Just decide on the size you want for the shape.
     shape.resize(150, 150);
 
+    // Update shape name, by default it'll be "Rectangle"
+    shape.name = "My example shape";
+
     // Let's add some color.
     shape.fills = [{ fillColor: '#7EFFF5' }];
 
