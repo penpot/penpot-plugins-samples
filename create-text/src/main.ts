@@ -1,7 +1,3 @@
-// get the current theme from the URL
-const searchParams = new URLSearchParams(window.location.search);
-document.body.dataset.theme = searchParams.get("theme") ?? "light";
-
 document.querySelector(".action-create-text")?.addEventListener("click", () => {
   // send message to plugin.ts
   parent.postMessage("create-text", "*");

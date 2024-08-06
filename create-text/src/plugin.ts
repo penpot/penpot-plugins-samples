@@ -1,27 +1,9 @@
-penpot.ui.open("Penpot plugin starter template", `?theme=${penpot.getTheme()}`);
+penpot.ui.open("Penpot plugin starter template", '');
 
 penpot.ui.onMessage<string>((message) => {
   if (message === "create-text") {
     let text = penpot.createText('Hello World!');
-    // TODO output createText
-
-    if (text) {
-      text.growType = 'auto-width';
-      text.fontStyle = 'italic';
-      text.textTransform = 'uppercase';
-      text.textDecoration = 'underline';
-      // the following properties can be set up with 'mixed' if multiple fonts are used
-      text.fontFamily = 'Work Sans';
-      text.fontId = 'gfont-work-sans';
-      text.fontSize = '20';
-      text.fontWeight = '500';
-
-      text.x = penpot.viewport.center.x;
-      text.y = penpot.viewport.center.y;
-
-      penpot.selection = [text];
-    }
-    // output
+        // output
     //   {
     //     "id": "b6ea2aac-1eb3-801a-8004-c3d118e2dcca",
     //     "type": "text",
@@ -88,14 +70,23 @@ penpot.ui.onMessage<string>((message) => {
     //     "align": "left",
     //     "verticalAlign": null
     // }
-  }
-});
 
-// Update the theme in the iframe
-penpot.on("themechange", (theme) => {
-  penpot.ui.sendMessage({
-    source: "penpot",
-    type: "themechange",
-    theme,
-  });
+    if (text) {
+      text.growType = 'auto-width';
+      text.fontStyle = 'italic';
+      text.textTransform = 'uppercase';
+      text.textDecoration = 'underline';
+      // the following properties can be set up with 'mixed' if multiple fonts are used
+      text.fontFamily = 'Work Sans';
+      text.fontId = 'gfont-work-sans';
+      text.fontSize = '20';
+      text.fontWeight = '500';
+
+      text.x = penpot.viewport.center.x;
+      text.y = penpot.viewport.center.y;
+
+      // set the selection to our just created text 
+      penpot.selection = [text];
+    }
+  }
 });
