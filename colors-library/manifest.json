@@ -1,0 +1,13 @@
+{
+    "name": "Penpot colors library",
+    "host": "http://localhost:4400",
+    "code": "plugin.js",
+    "description": "This is an example plugin for colors library",
+    "permissions": [
+      "content:read",
+      "content:write",
+      "library:read",
+      "library:write"
+    ]
+  }
+  
