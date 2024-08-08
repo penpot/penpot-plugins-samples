@@ -1,0 +1,11 @@
+{
+    "name": "Penpot create gridLayout",
+    "host": "http://localhost:4400",
+    "code": "plugin.js",
+    "description": "This is a create gridLayout plugin",
+    "permissions": [
+      "content:read",
+      "content:write"
+    ]
+  }
+  
