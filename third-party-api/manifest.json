@@ -1,0 +1,11 @@
+{
+    "name": "Penpot create images board",
+    "host": "http://localhost:4400",
+    "code": "plugin.js",
+    "description": "This is a create images board plugin",
+    "permissions": [
+      "content:read",
+      "content:write"
+    ]
+  }
+  
