@@ -14,6 +14,7 @@ As we said before, we used the <a target="_blank" href="https://github.com/penpo
 - Clone the repository 
     ```
     git clone git@github.com:penpot/penpot-plugin-starter-template.git
+    cd penpot-plugin-starter-template
     ```
 - You've got two options here. You can either replace the files in the examples, or just copy the content into the equivalent file.
 - Once you've done that, you just need to run `npm run dev` in the starter template project and install the plugin in your penpot UI using the URL that it'll appear in the terminal. It should look something like this: `http://localhost:4400/manifest.json`.
