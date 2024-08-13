@@ -33,6 +33,8 @@ If you would like to share an example, we would appreciate it if you could make 
 
 If you have suggestions for examples or use cases that you would like us to include in the repository, you can write to us at <a href="mailto:info@penpot.app">info@penpot.app</a> or open an issue in <a href="https://github.com/penpot/penpot-plugins-samples/issues">this repository</a> with the tag `enhancement` describing your needs and if it's possible, including an example.
 
+If you spot a problem with an example and it's not working right, you can open an issue with the tag `bug`.
+
 ## Useful links ##
 * <a target="_blank" href="https://github.com/penpot/penpot-plugin-starter-template">Plugin Starter Template with plain Typescript</a><br>
 * <a target="_blank" href="https://github.com/penpot/plugin-examples">Plugin Starter Template using a framework</a><br>
