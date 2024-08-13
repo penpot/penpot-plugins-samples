@@ -1,4 +1,4 @@
-penpot.ui.open("Penpot plugin starter template", '');
+penpot.ui.open("Penpot plugin starter template", "");
 
 penpot.ui.onMessage<string>((message) => {
   if (message === "create-flex") {
@@ -6,8 +6,8 @@ penpot.ui.onMessage<string>((message) => {
     const frame = penpot.createFrame();
 
     // You'll need to set the frame to auto so it fits its content.
-    frame.horizontalSizing = 'auto';
-    frame.verticalSizing = 'auto';
+    frame.horizontalSizing = "auto";
+    frame.verticalSizing = "auto";
 
     // Then you can add the flexLayout to it
     const flex = frame.addFlexLayout();
@@ -30,24 +30,24 @@ penpot.ui.onMessage<string>((message) => {
     //  "leftPadding": 0
     // }
 
-    // We can choose whether to go right or left with 'row' or 'row-reverse', or up or down with 'column' or 'column-reverse'. The default is null.
-    flex.dir = 'column';
+    // We can choose whether to go right or left with "row" or "row-reverse", or up or down with "column" or "column-reverse". The default is null.
+    flex.dir = "column";
 
-    // Next, we can decide the wrapping behaviour ('wrap' | 'nowrap'). The default setting for this property is "undefined".
-    flex.wrap = 'wrap';
+    // Next, we can decide the wrapping behaviour ("wrap" | "nowrap"). The default setting for this property is "undefined".
+    flex.wrap = "wrap";
 
-    // Let's align the items. These are the options: 'start' | 'end' | 'center' | 'stretch';
-    flex.alignItems = 'center';
-    // and also we can align the content. These are the options 'start' | 'end' | 'center' | 'space-between' | 'space-around' | 'space-evenly' | 'stretch';
-    flex.justifyContent = 'center';
+    // Let's align the items. These are the options: "start" | "end" | "center" | "stretch";
+    flex.alignItems = "center";
+    // and also we can align the content. These are the options "start" | "end" | "center" | "space-between" | "space-around" | "space-evenly" | "stretch";
+    flex.justifyContent = "center";
 
     // We can set up a padding
     flex.verticalPadding = 5;
     flex.horizontalPadding = 5;
 
-    // We can choose how big the container is going to be, both horizontally and vertically. These are the options: 'auto' | 'fill' | 'fix';
-    flex.horizontalSizing = 'fill';
-    flex.verticalSizing = 'fill';
+    // We can choose how big the container is going to be, both horizontally and vertically. These are the options: "auto" | "fill" | "fix";
+    flex.horizontalSizing = "fill";
+    flex.verticalSizing = "fill";
 
     // You can also add some shapes inside to get a better idea of what the results will be.
     frame.appendChild(penpot.createRectangle());

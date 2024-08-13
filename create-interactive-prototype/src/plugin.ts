@@ -1,6 +1,6 @@
 import { PenpotFrame } from "@penpot/plugin-types";
 
-penpot.ui.open("Penpot plugin starter template", '');
+penpot.ui.open("Penpot plugin starter template", "");
 
 penpot.ui.onMessage<string>((message) => {
   // * We refer to 'frame' which stands for 'board' in penpot UI. You can find in the root of this example of how 

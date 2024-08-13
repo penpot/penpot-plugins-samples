@@ -1,4 +1,4 @@
-penpot.ui.open("Penpot plugin starter template", '');
+penpot.ui.open("Penpot plugin starter template", "");
 
 penpot.ui.onMessage<string>((message) => {
   if (message === "create-grid") {
@@ -81,18 +81,18 @@ penpot.ui.onMessage<string>((message) => {
     //  "verticalSizing": "fix"
     // }
 
-    // Next, we can add some rows and columns to it. Just pass a parameter indicating the type of track do you want; 'flex' | 'fixed' | 'percent' | 'auto';
-    grid.addRow('flex', 1);
-    grid.addRow('flex', 1);
-    grid.addColumn('flex', 1);
-    grid.addColumn('flex', 1);
+    // Next, we can add some rows and columns to it. Just pass a parameter indicating the type of track do you want; "flex" | "fixed" | "percent" | "auto";
+    grid.addRow("flex", 1);
+    grid.addRow("flex", 1);
+    grid.addColumn("flex", 1);
+    grid.addColumn("flex", 1);
 
-    // Let's align the items. These are the options: 'start' | 'end' | 'center' | 'stretch';
-    grid.alignItems = 'center';
-    grid.justifyItems = 'start';
-    // and also we can align the content. These are the options 'start' | 'end' | 'center' | 'space-between' | 'space-around' | 'space-evenly' | 'stretch';
-    grid.justifyContent = 'space-between';
-    grid.alignContent = 'stretch';
+    // Let's align the items. These are the options: "start" | "end" | "center" | "stretch";
+    grid.alignItems = "center";
+    grid.justifyItems = "start";
+    // and also we can align the content. These are the options "start" | "end" | "center" | "space-between" | "space-around" | "space-evenly" | "stretch";
+    grid.justifyContent = "space-between";
+    grid.alignContent = "stretch";
 
     // Just like in CSS, we can set the row and column gap.
     grid.rowGap = 10;
@@ -102,9 +102,9 @@ penpot.ui.onMessage<string>((message) => {
     grid.verticalPadding = 5;
     grid.horizontalPadding = 5;
 
-    // We can choose how big the container is going to be, both horizontally and vertically. These are the options: 'fit-content' | 'fill' | 'auto';
-    grid.horizontalSizing = 'auto';
-    grid.verticalSizing = 'auto';
+    // We can choose how big the container is going to be, both horizontally and vertically. These are the options: "fit-content" | "fill" | "auto";
+    grid.horizontalSizing = "auto";
+    grid.verticalSizing = "auto";
 
     // *Just a heads-up: if you want to add a border to each cell, you'll need to create a rectangle or frame for that. The border will be applied to the whole table, not just each cell.
     // The same goes for color. It'll be applied to the whole table if you want to specify colors for each cell. In that case, you'll need to do the same as for borders.

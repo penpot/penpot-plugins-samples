@@ -1,12 +1,12 @@
-penpot.ui.open("Penpot plugin starter template", '');
+penpot.ui.open("Penpot plugin starter template", "");
 
 penpot.ui.onMessage<string>((message) => {
   if (message === "create-images-board") {
     // First of all, let's get the images from picsum photos.
-    fetch('https://picsum.photos/v2/list?limit=5')
+    fetch("https://picsum.photos/v2/list?limit=5")
       .then(response => {
           if (!response.ok) {
-              throw new Error('Error getting data');
+              throw new Error("Error getting data");
           }
           return response.json();
       })
@@ -17,10 +17,10 @@ penpot.ui.onMessage<string>((message) => {
         const flex = frame.addFlexLayout();
 
         // Let's add some styles.
-        frame.horizontalSizing = 'auto';
-        frame.verticalSizing = 'auto';
-        flex.horizontalSizing = 'fill';
-        flex.verticalSizing = 'fill';
+        frame.horizontalSizing = "auto";
+        frame.verticalSizing = "auto";
+        flex.horizontalSizing = "fill";
+        flex.verticalSizing = "fill";
 
         // You're getting five images from picsum photos, so we need to loop through the array to load each one. 
         images.forEach((image: any) => {
@@ -42,7 +42,7 @@ penpot.ui.onMessage<string>((message) => {
         });
       })
       .catch(error => {
-          console.error('There was a problem:', error);
+          console.error("There was a problem:", error);
       });
   }
 });
