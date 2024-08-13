@@ -18,6 +18,21 @@ As we said before, we used the <a target="_blank" href="https://github.com/penpo
 - You've got two options here. You can either replace the files in the examples, or just copy the content into the equivalent file.
 - Once you've done that, you just need to run `npm run dev` in the starter template project and install the plugin in your penpot UI using the URL that it'll appear in the terminal. It should look something like this: `http://localhost:4400/manifest.json`.
 
+## How to contribute
+Do you have any examples you'd like to share? Have you come up with a use case that you think the community would find interesting? We'd be thrilled to hear from you!
+
+If you would like to share an example, we would appreciate it if you could make a pull request to this repository using the following structure:
+```
+▾ sample-name/
+  ▸ src/
+    main.ts
+    plugin.ts
+  index.html
+  manifest.json
+```
+
+If you have suggestions for examples or use cases that you would like us to include in the repository, you can write to us at <a href="mailto:info@penpot.app">info@penpot.app</a> or open an issue in <a href="https://github.com/penpot/penpot-plugins-samples/issues">this repository</a> with the tag `enhancement` describing your neededs and if it's possible, including an example.
+
 ## Useful links ##
 * <a target="_blank" href="https://github.com/penpot/penpot-plugin-starter-template">Plugin Starter Template with plain Typescript</a><br>
 * <a target="_blank" href="https://github.com/penpot/plugin-examples">Plugin Starter Template using a framework</a><br>
