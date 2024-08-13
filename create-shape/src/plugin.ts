@@ -70,7 +70,7 @@ penpot.ui.onMessage<string>((message) => {
     shape.name = "My example shape";
 
     // Let's add some color.
-    shape.fills = [{ fillColor: '#7EFFF5' }];
+    shape.fills = [{ fillColor: "#7EFFF5" }];
 
     // Let's add a border radius.
     // You can set a border radius for each side using the following options: borderRadiusTopLeft, borderRadiusTopRight, borderRadiusBottomRight, or borderRadiusBottomLeft.
@@ -79,10 +79,10 @@ penpot.ui.onMessage<string>((message) => {
     // Let's add a border
     shape.strokes = [
       {
-        strokeColor: '#2e3434',
-        strokeStyle: 'solid',
+        strokeColor: "#2e3434",
+        strokeStyle: "solid",
         strokeWidth: 2,
-        strokeAlignment: 'center',
+        strokeAlignment: "center",
       },
     ];
 
