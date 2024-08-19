@@ -1,3 +1,5 @@
+import "./style.css";
+
 // Just get the current theme from the URL and update the parameter of the plugin URL.
 const searchParams = new URLSearchParams(window.location.search);
 document.body.dataset.theme = searchParams.get("theme") ?? "light";

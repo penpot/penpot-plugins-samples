@@ -1,0 +1,10 @@
+/* Since we're using the plugin-styles library, the button in our plugin will automatically switch between dark and light mode. For any other elements you add, if you want them to look a certain way depending on the mode, you can use the selectors below to set that up. */
+@import "@penpot/plugin-styles/styles.css";
+
+[data-theme="dark"] {
+  /* Add dark styles */
+}
+
+[data-theme="light"] {
+  /* Add light styles */
+}
