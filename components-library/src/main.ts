@@ -1,9 +1,9 @@
-document.querySelector(".action-create-component")?.addEventListener("click", () => {
+document.querySelector("[data-handler='create-component']")?.addEventListener("click", () => {
   // send message to plugin.ts
   parent.postMessage("create-component", "*");
 });
 
-document.querySelector(".action-read-components")?.addEventListener("click", () => {
+document.querySelector("[data-handler='read-components']")?.addEventListener("click", () => {
   // send message to plugin.ts
   parent.postMessage("read-components", "*");
 });
