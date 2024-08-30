@@ -76,7 +76,6 @@ penpot.ui.onMessage<string>((message) => {
       text.fontStyle = "italic";
       text.textTransform = "uppercase";
       text.textDecoration = "underline";
-      // the following properties can be set up with "mixed" if multiple fonts are used
       text.fontFamily = "Work Sans";
       text.fontId = "gfont-work-sans";
       text.fontSize = "20";

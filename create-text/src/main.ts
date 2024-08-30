@@ -1,4 +1,4 @@
-document.querySelector(".action-create-text")?.addEventListener("click", () => {
+document.querySelector("[data-handler='create-text']")?.addEventListener("click", () => {
   // send message to plugin.ts
   parent.postMessage("create-text", "*");
 });
