@@ -73,11 +73,12 @@ penpot.ui.onMessage<string>((message) => {
 
     if (text) {
       text.growType = "auto-width";
-      text.fontStyle = "italic";
       text.textTransform = "uppercase";
       text.textDecoration = "underline";
-      text.fontFamily = "Work Sans";
       text.fontId = "gfont-work-sans";
+      // Order matters! If you apply fontStyle or fontWeight before fontId it won't be applied because it'll change fontType and maybe doesn't have that option.
+      // Also, keep in mind that not all fonts supports the same styles and weights. You might be setting an italic style to a font that, again, doesn't have that option.
+      text.fontStyle = "italic";
       text.fontSize = "20";
       text.fontWeight = "500";
 

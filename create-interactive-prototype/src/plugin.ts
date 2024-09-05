@@ -23,12 +23,12 @@ penpot.ui.onMessage<string>((message) => {
 
     // Element that triggers the navigation
     const buttonHome = penpot.getPage()?.findShapes({name: "Home button to list"})[0];
-    buttonHome?.addInteraction("click", {type: "navigate-to", destination: itemsList as PenpotFrame, animation: {type: "slide", way: "in", direction: "left", duration: 200}});
+    buttonHome?.addInteraction("click", {type: "navigate-to", destination: itemsList as PenpotFrame, animation: {type: "slide", way: "in", direction: "left", duration: 200, easing: "linear"}});
 
     // Get all Items(rectangles) from Items list frame and add an interaction to each one to navigate to the Item Detail frame
     const items = page?.findShapes({name: "Item", type: "rect"});
     items?.forEach(item => {
-      item?.addInteraction("click", {type: "navigate-to", destination: itemDetail as PenpotFrame, animation: {type: "slide", way: "in", direction: "left", duration: 200}});
+      item?.addInteraction("click", {type: "navigate-to", destination: itemDetail as PenpotFrame, animation: {type: "slide", way: "in", direction: "left", duration: 200, easing: "linear"}});
     });
 
     // When we are in the item detail, let's set an interaction to navigate back to the previous frame
