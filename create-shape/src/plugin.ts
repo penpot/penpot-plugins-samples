@@ -2,7 +2,7 @@ penpot.ui.open("Penpot plugin starter template", "");
 
 penpot.ui.onMessage<string>((message) => {
   if (message === "create-rectangle") {
-    // You can also use createEllipse(), createPath() or createFrame()
+    // You can also use createEllipse(), createPath() or createBoard()
     const shape = penpot.createRectangle();
     // output
     // {

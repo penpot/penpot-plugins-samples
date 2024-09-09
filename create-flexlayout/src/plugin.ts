@@ -2,15 +2,15 @@ penpot.ui.open("Penpot plugin starter template", "");
 
 penpot.ui.onMessage<string>((message) => {
   if (message === "create-flex") {
-    // First of all you need to create a frame (Board in penpot UI)
-    const frame = penpot.createFrame();
+    // First of all you need to create a board
+    const board = penpot.createBoard();
 
-    // You'll need to set the frame to auto so it fits its content.
-    frame.horizontalSizing = "auto";
-    frame.verticalSizing = "auto";
+    // You'll need to set the board to auto so it fits its content.
+    board.horizontalSizing = "auto";
+    board.verticalSizing = "auto";
 
     // Then you can add the flexLayout to it
-    const flex = frame.addFlexLayout();
+    const flex = board.addFlexLayout();
     // output
     //{
     //  "dir": null,
@@ -50,7 +50,7 @@ penpot.ui.onMessage<string>((message) => {
     flex.verticalSizing = "fill";
 
     // You can also add some shapes inside to get a better idea of what the results will be.
-    frame.appendChild(penpot.createRectangle());
-    frame.appendChild(penpot.createEllipse());
+    board.appendChild(penpot.createRectangle());
+    board.appendChild(penpot.createEllipse());
   }
 });
