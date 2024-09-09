@@ -2,15 +2,15 @@ penpot.ui.open("Penpot plugin starter template", "");
 
 penpot.ui.onMessage<string>((message) => {
   if (message === "create-grid") {
-    // First of all you need to create a frame (Board in penpot UI)
-    const frame = penpot.createFrame();
+    // First of all you need to create a board
+    const board = penpot.createBoard();
 
     // Then you can add the gridLayout to it
-    const grid = frame.addGridLayout();
+    const grid = board.addGridLayout();
     // output
-    // {    
+    // {
     //  "id": "abc556f2-8e68-80f9-8004-c7803cb57625",
-    //  "type": "frame",
+    //  "type": "board",
     //  "name": "Board",
     //  "blocked": false,
     //  "hidden": false,
@@ -106,7 +106,7 @@ penpot.ui.onMessage<string>((message) => {
     grid.horizontalSizing = "auto";
     grid.verticalSizing = "auto";
 
-    // *Just a heads-up: if you want to add a border to each cell, you'll need to create a rectangle or frame for that. The border will be applied to the whole table, not just each cell.
+    // *Just a heads-up: if you want to add a border to each cell, you'll need to create a rectangle or board for that. The border will be applied to the whole table, not just each cell.
     // The same goes for color. It'll be applied to the whole table if you want to specify colors for each cell. In that case, you'll need to do the same as for borders.
   }
 });
