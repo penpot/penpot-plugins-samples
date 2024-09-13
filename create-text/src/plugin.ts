@@ -2,7 +2,7 @@ penpot.ui.open("Penpot plugin starter template", "");
 
 penpot.ui.onMessage<string>((message) => {
   if (message === "create-text") {
-    let text = penpot.createText("Hello World!");
+    const text = penpot.createText("Hello World!");
         // output
     //   {
     //     "id": "b6ea2aac-1eb3-801a-8004-c3d118e2dcca",
@@ -81,6 +81,12 @@ penpot.ui.onMessage<string>((message) => {
       text.fontStyle = "italic";
       text.fontSize = "20";
       text.fontWeight = "500";
+
+      // You can also apply different styles to specific text ranges if you need to.
+      // This will select the "Hello" section from the text we created earlier.
+      const textRange = text.getRange(0, 5);
+      textRange.fontSize = "40";
+      textRange.fills = [{ fillColor: '#ff6fe0', fillOpacity: 1 }];
 
       text.x = penpot.viewport.center.x;
       text.y = penpot.viewport.center.y;
