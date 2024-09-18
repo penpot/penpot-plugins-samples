@@ -1,6 +1,6 @@
 import { Board } from "@penpot/plugin-types";
 
-penpot.ui.open("Penpot plugin starter template", "");
+penpot.ui.open("Penpot interactive prototype", "");
 
 penpot.ui.onMessage<string>((message) => {
   // If you want to give this example a try, it's best to assume it'll work well with the Penpot interface you've already set up like this:
