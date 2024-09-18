@@ -1,4 +1,4 @@
-penpot.ui.open("Penpot plugin starter template", "");
+penpot.ui.open("Penpot group and ungroup", "");
 
 penpot.ui.onMessage<string>((message) => {
   if (message === "group") {

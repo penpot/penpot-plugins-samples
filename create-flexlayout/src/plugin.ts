@@ -1,4 +1,4 @@
-penpot.ui.open("Penpot plugin starter template", "");
+penpot.ui.open("Penpot flexLayout", "");
 
 penpot.ui.onMessage<string>((message) => {
   if (message === "create-flex") {
