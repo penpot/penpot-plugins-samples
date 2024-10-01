@@ -1,5 +1,5 @@
 // When we open the plugin modal, we just add the current theme that's applied in the penpot UI to the iframe URL as a parameter.
-penpot.ui.open("Penpot theme", `?theme=${penpot.getTheme()}`);
+penpot.ui.open("Penpot theme", `?theme=${penpot.theme}`);
 
 // When you switch themes in the penpot UI, we'll send a message to handle it in main.js.
 penpot.on("themechange", (theme) => {
