@@ -4,7 +4,6 @@
     "code": "plugin.js",
     "description": "This is a create ruler guides plugin ",
     "permissions": [
-      "content:read",
       "content:write"
     ]
   }

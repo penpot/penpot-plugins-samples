@@ -3,9 +3,9 @@ penpot.ui.open("Penpot components library", "");
 penpot.ui.onMessage<string>((message) => {
   if (message === "create-component") {
     const rectangle = penpot.createRectangle();
-    const shape = penpot.getPage()?.getShapeById(rectangle.id);
+    const shape = penpot.currentPage?.getShapeById(rectangle.id);
     // You'll need to send a shape as a parameter. It can be a new one or an existing one.
-    if (shape ) {
+    if (shape) {
       // let's create a component
       penpot.library.local.createComponent(shape);
       // output

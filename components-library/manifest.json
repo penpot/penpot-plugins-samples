@@ -4,9 +4,7 @@
     "code": "plugin.js",
     "description": "This is an example plugin for components library",
     "permissions": [
-      "content:read",
       "content:write",
-      "library:read",
       "library:write"
     ]
   }

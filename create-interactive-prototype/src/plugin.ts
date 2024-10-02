@@ -10,7 +10,7 @@ penpot.ui.onMessage<string>((message) => {
   // In the "Item detail" we need to add another board with a nested callout titled "Detail button to list."
   // Just a heads-up: At the root of this example, you'll find a screenshot of how the structure of elements in Penpot would look like for this example to work correctly (example-tree-elements.png).
   if (message === "create-flow") {
-    const page = penpot.getPage();
+    const page = penpot.currentPage;
 
     // You'll need to get the boards so you can specify where you want to navigate to.
     const home = page?.findShapes({ name: "Home", type: "board" })[0];
@@ -24,12 +24,12 @@ penpot.ui.onMessage<string>((message) => {
     })[0];
 
     // First things first, we need to set up a flow and choose a starting board. This will be our Home board.
-    home && penpot.getPage()?.createFlow("My first flow", home as Board);
+    home && penpot.currentPage?.createFlow("My first flow", home as Board);
 
     // Element that triggers the navigation
-    const buttonHome = penpot
-      .getPage()
-      ?.findShapes({ name: "Home button to list" })[0];
+    const buttonHome = penpot.currentPage?.findShapes({
+      name: "Home button to list",
+    })[0];
     buttonHome?.addInteraction("click", {
       type: "navigate-to",
       destination: itemsList as Board,
@@ -59,9 +59,9 @@ penpot.ui.onMessage<string>((message) => {
     });
 
     // When we are in the item detail, let's set an interaction to navigate back to the previous board
-    const buttonBack = penpot
-      .getPage()
-      ?.findShapes({ name: "Detail button to list" })[0];
+    const buttonBack = penpot.currentPage?.findShapes({
+      name: "Detail button to list",
+    })[0];
     buttonBack?.addInteraction("click", { type: "previous-screen" });
   }
 });
