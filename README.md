@@ -1,5 +1,7 @@
 # penpot plugins samples
 
+<a href="https://penpot.app/"><img src="https://img.shields.io/badge/Penpot-000000?style=for-the-badge&logo=penpot&logoColor=white"/></a> <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white"/></a>
+
 In this repository, you'll find a few practical examples and use cases. These examples can help you get started with your first plugin.
 
 For each example, we used the <a target="_blank" href="https://github.com/penpot/penpot-plugin-starter-template">starter template repository</a> that you can use as a starting point.
