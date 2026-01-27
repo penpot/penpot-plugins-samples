@@ -39,5 +39,5 @@ If you spot a problem with an example and it's not working right, you can open a
 ## Useful links ##
 * <a target="_blank" href="https://github.com/penpot/penpot-plugin-starter-template">Plugin Starter Template with plain Typescript</a><br>
 * <a target="_blank" href="https://github.com/penpot/plugin-examples">Plugin Starter Template using a framework</a><br>
-* <a target="_blank" href="https://penpot-plugins-styles.pages.dev/">Plugin styles</a><br>
-* <a target="_blank" href="https://penpot-plugins-api-doc.pages.dev/">API Documentation</a>
+* <a target="_blank" href="https://styles-doc.plugins.penpot.app/">Plugin styles</a><br>
+* <a target="_blank" href="https://doc.plugins.penpot.app/">API Documentation</a>
