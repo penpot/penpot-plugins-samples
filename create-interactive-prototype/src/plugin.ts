@@ -43,7 +43,7 @@ penpot.ui.onMessage<string>((message) => {
     });
 
     // Get all Items(rectangles) from Items list boards and add an interaction to each one to navigate to the Item Detail board
-    const items = page?.findShapes({ name: "Item", type: "rect" });
+    const items = page?.findShapes({ name: "Item", type: "rectangle" });
     items?.forEach((item) => {
       item?.addInteraction("click", {
         type: "navigate-to",
