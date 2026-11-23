@@ -7,7 +7,7 @@ penpot.ui.onMessage<string>((message) => {
     // You'll need to send a shape as a parameter. It can be a new one or an existing one.
     if (shape) {
       // let's create a component
-      penpot.library.local.createComponent(shape);
+      penpot.library.local.createComponent([shape]);
       // output
       // {
       //   "id": "68ec0227-4d3e-80db-8004-c66782db65b2",
